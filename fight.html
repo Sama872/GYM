@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>gym</title>
+    <link rel="stylesheet" href="home2.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* nav bar */
+        nav , .dropdown-menu{
+            background-color: black !important;
+        }
+        
+        .nav-item , .nav-link , .dropdown-item{
+            color: white !important;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .nav-link:hover{
+            color: rgb(0, 4, 240) !important;
+        }
+
+        .dropdown-item:hover{
+            color: rgb(0, 4, 240) !important;
+        }
+        .navbar-toggler , .navbar-toggler-icon{
+            background-color: white !important;
+        }
+
+        @media (min-width:1000px) {
+            .navbar-nav{
+                margin-left: 100px;
+            }
+        }
+        /* end nav bar */
+
+        /*name section*/
+        header{
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.349)),url(imgs/fightheader.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /*background-attachment: fixed;*/
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1{
+            color: white;
+            font-weight: bold;
+        }
+
+        /*end name section*/
+
+        /*video section*/
+        video{
+            border-radius: 30px;
+        }
+        /*end video section*/
+
+        /*book and payment section*/
+        .col-sm-6 img{
+          width: 450px;
+          height: 300px;
+          border-radius: 20px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      p span{
+        color: rgba(7, 7, 104, 0.856);
+        font-weight: 700;
+        font-size: 22px;
+      }
+
+      .col-sm-6 p{
+        font-weight: 300;
+        font-size: 20px;
+      }
+
+      @media (min-width:900px) {
+        .col-sm-6 p{
+          padding-top: 60px;
+        }
+      }
+
+      .col-sm-12{
+        margin-top: 30px;
+      }
+
+      .collapse .card-body{
+        background-color: rgba(0, 0, 0, 0.555);
+        color: white;
+      }
+
+      label{
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      /*payment*/
+      .card {
+       /* max-width: 500px;*/
+        margin: auto;
+        color: black;
+        border-radius: 20 px;
+    }
+    
+    /*p {
+        margin: 0px;
+    }*/
+    
+    .container .h8 {
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    /*.btn.btn-primary {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+        border: none;
+        transition: 0.5s;
+        background-size: 200% auto;
+    
+    }*/
+    
+    
+    /*.btn.btn.btn-primary:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }*/
+    
+    
+    
+    /*.btn.btn-primary:hover .fas.fa-arrow-right {
+        transform: translate(15px);
+        transition: transform 0.2s ease-in;
+    }*/
+    
+    .form-control {
+        color: white;
+        background-color: #223C60;
+        border: 2px solid transparent;
+        height: 60px;
+        padding-left: 20px;
+        vertical-align: middle;
+    }
+    
+    .form-control:focus {
+        color: white;
+        background-color: #0C4160;
+        border: 2px solid #2d4dda;
+        box-shadow: none;
+    }
+    
+    .text {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    ::placeholder {
+        font-size: 14px;
+        font-weight: 600;
+    }
+      /*payment*/
+        /*end book and payment section*/
+
+       
+
+        /* footer */
+
+
+        footer{
+            position: relative !important;
+            bottom: 0;
+            right: 0;
+            left: 0;
+          }
+          @media (min-width:1000px) {
+            footer{
+                height: 500px !important;
+            }
+          }
+  
+          section{
+            color:white !important;
+          }
+  
+          a{
+            text-decoration: none !important;
+          }
+  
+          a:hover{
+            color:rgb(11, 175, 197) !important;
+          }
+  
+          
+  
+  /* end footer */
+
+    </style>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="home.html"><img src="imgs/logo.png" alt="" width="70px" height="60px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bodybuild.html">body-building</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fight.html">fight</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="fitness.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                fitness
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="fitness.html#zumba">zumbaa</a></li>
+                <li><a class="dropdown-item" href="fitness.html#yoga">yoga</a></li>
+                <li><a class="dropdown-item" href="fitness.html#fitness">fitness</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">about us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">log out</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-danger"  style="margin-right: 20px;"><a href="signup.html" style="color: white;">sign up</a></button>
+            <button class="btn btn-outline-danger" ><a href="signin.html" style="color: white;">sign in</a></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  <!-- navbar -->
+
+    <!-- section workout name -->
+      <header>
+        <h1>fight games</h1>
+      </header>
+      <br>
+      <br>
+    <!-- end section workout name -->
+
+    <center>
+        <div class="container">
+            <h1>what is fight games?</h1>
+            <br>
+            <br>
+    
+            <video width="780" height="400" poster="imgs/fightposter.jpg" controls>
+                <source src="imgs/fightvideo.mp4" type="video/mp4">
+                <source src="" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <br>
+        <br>
+        <br>
+    </center>
+
+    <center>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <p>
+              <span>fight games</span> are Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Mollitia, error eveniet. Enim eligendi velit modi fugit maiores corporis alias
+                dolorem consequuntur quibusdam a adipisci illo quam reiciendis nemo, officiis maxime.
+            </p>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="imgs/fightrightcard.png" alt="">
+          </div>
+
+          <div class="col-sm-12">
+            <p>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                book the workout
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+               <form action="" method="post">
+                <br>
+                
+
+                <div class="col-sm-12">
+                  <p style="font-size: 20px; font-weight:bold; color:rgba(6, 6, 126, 0.699);">workout duration:</p>
+                    <input type="radio"  name="duration" value="3months">
+                    <label for="3months" >3 months (20$)</label><br>
+                    <input type="radio"  name="duration" value="6months" >
+                    <label for="6months">6 months (25$)</label><br>
+                    <input type="radio"  name="duration" value="9months">
+                    <label for="9months">9 months (30$)</label><br>
+              </div>
+
+              <div class="col-sm-12">
+                <p style="font-size: 20px; font-weight:bold; color:rgba(6, 6, 126, 0.699);">which type of fight games you want to book it:</p>
+                  <input type="radio"  name="fight" value="boxing">
+                  <label for="boxing" >boxing</label><br>
+                  <input type="radio"  name="fight" value="karate" >
+                  <label for="karate">karate</label><br>
+                  <input type="radio"  name="fight" value="MMA">
+                  <label for="MMA">MMA</label><br>
+            </div>
+
+            <!-- 
+               <div class="col-sm-12">
+                  <p style="font-size: 20px; font-weight:bold; color:rgba(6, 6, 126, 0.699);">offline workout times and coaches:</p>
+                    <input type="radio"  name="fav_language" value="client">
+                    <label for="client" >from sunday to Wednesday from 8pm to 5pm (coach karim)</label><br>
+                    <input type="radio"  name="fav_language" value="coach">
+                    <label for="coach">from saturday to thursday from 10pm to 6pm (coach hamdy)</label><br>
+                    <input type="radio"  name="fav_language" value="coach">
+                    <label for="coach">from friday to Wednesday  from 8pm to 3pm (coach sama)</label><br>
+              </div>
+             -->
+
+
+                <div class="col-sm-12">
+                  <p style="font-size: 20px; font-weight:bold; color:rgba(6, 6, 126, 0.699);">boxing workout times and coaches:</p>
+                    <input type="radio"  name="fav_language" value="client">
+                    <label for="client" >from sunday to Wednesday from 8pm to 5pm (coach karim)</label><br>
+                    <input type="radio"  name="fav_language" value="coach">
+                    <label for="coach">from saturday to thursday from 10pm to 6pm (coach hamdy)</label><br>
+                    <input type="radio"  name="fav_language" value="coach">
+                    <label for="coach">from friday to Wednesday  from 8pm to 3pm (coach sama)</label><br>
+              </div>
+
+              <div class="col-sm-12">
+                <p style="font-size: 20px; font-weight:bold; color:rgba(6, 6, 126, 0.699);">MMA workout times and coaches:</p>
+                  <input type="radio"  name="fav_language" value="client">
+                  <label for="client" >from sunday to Wednesday from 8pm to 5pm (coach karim)</label><br>
+                  <input type="radio"  name="fav_language" value="coach">
+                  <label for="coach">from saturday to thursday from 10pm to 6pm (coach hamdy)</label><br>
+                  <input type="radio"  name="fav_language" value="coach">
+                  <label for="coach">from friday to Wednesday  from 8pm to 3pm (coach sama)</label><br>
+            </div>
+
+
+            <div class="col-sm-12">
+              <p style="font-size: 20px; font-weight:bold; color:rgba(6, 6, 126, 0.699);">karate workout times and coaches:</p>
+                <input type="radio"  name="fav_language" value="client">
+                <label for="client" >from sunday to Wednesday from 8pm to 5pm (coach karim)</label><br>
+                <input type="radio"  name="fav_language" value="coach">
+                <label for="coach">from saturday to thursday from 10pm to 6pm (coach hamdy)</label><br>
+                <input type="radio"  name="fav_language" value="coach">
+                <label for="coach">from friday to Wednesday  from 8pm to 3pm (coach sama)</label><br>
+          </div>
+              <br>
+              <br>
+
+              
+             
+
+             <!-- pay inn fawry -->
+           <!-- Button trigger modal -->
+           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            pay by fawry
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: black;">fawry code(pay in three days)</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2 style="color: black;">2012355596555</h2>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- end pay by fawry -->
+         
+
+          <div class="col-sm-12">
+                              <!-- Button trigger modal -->
+                              <!-- payment by visa -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModall">
+                pay by visa
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container p-0">
+                        <div class="card px-4">
+                            <p class="h8 py-3">Payment Details</p>
+                            <div class="row gx-3">
+                                <div class="col-12">
+                                    <div class="d-flex flex-column">
+                                        <p class="text mb-1">Person Name</p>
+                                        <input class="form-control mb-3" type="text" placeholder="Name" value="Barry Allen">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex flex-column">
+                                        <p class="text mb-1">Card Number</p>
+                                        <input class="form-control mb-3" type="text" placeholder="1234 5678 435678">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column">
+                                        <p class="text mb-1">Expiry</p>
+                                        <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex flex-column">
+                                        <p class="text mb-1">CVV/CVC</p>
+                                        <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <!-- <div class="btn btn-primary mb-3">
+                                         <span class="ps-3">Pay $243</span>
+                                        <span class="fa fa-arrow-right"></span>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary"><span class="ps-3">Pay $243</span>
+                        <span class="fa fa-arrow-right"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <!-- end pay by visa -->
+
+               </form>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </center>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fa fa-gem me-3"><img src="imgs/logo.png" alt="" width="40px" height="40px"></i>ROCK GYM
+          </h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Repellendus architecto labore assumenda temporibus minima facere deleniti
+             perferendis beatae alias voluptatem? Sint laborum autem ea doloremque voluptatibus
+              dolor ullam sed inventore!
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            workouts
+          </h6>
+          <p>
+            <a href="bodybuild.html" class="text-reset">body building</a>
+          </p>
+          <p>
+            <a href="fight.html" class="text-reset">fight games</a>
+          </p>
+          <p>
+            <a href="fitness.html#zumba" class="text-reset">zomba</a>
+          </p>
+          <p>
+            <a href="fitness.html#yoga" class="text-reset">yoga</a>
+          </p>
+          <p>
+            <a href="fitness.html#fitness" class="text-reset">fitness</a>
+          </p>
+         
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="home.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="bodybuild.html" class="text-reset">body building</a>
+          </p>
+          <p>
+            <a href="fight.html" class="text-reset">fight games</a>
+          </p>
+          <p>
+            <a href="fitness.html" class="text-reset">fitness</a>
+          </p>
+
+          <p>
+            <a href="aboutus.html" class="text-reset">about us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fa fa-home me-3"></i> DOKKI, GIZA, EGYPT</p>
+          <p>
+            <i class="fa fa-envelope me-3"></i>
+            info@example.com
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+ 
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <!-- end footer -->
+  
+
+
+    <script src="js/popper.min.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

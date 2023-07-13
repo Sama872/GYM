@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* nav bar */
+nav , .dropdown-menu{
+    background-color: black !important;
+}
+
+.nav-item , .nav-link , .dropdown-item{
+    color: white !important;
+    font-size: 20px;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color: rgb(0, 4, 240) !important;
+}
+
+.dropdown-item:hover{
+    color: rgb(0, 4, 240) !important;
+}
+.navbar-toggler , .navbar-toggler-icon{
+    background-color: white !important;
+}
+
+@media (min-width:1000px) {
+    .navbar-nav{
+        margin-left: 100px;
+    }
+}
+/* end nav bar */
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.596),rgba(0, 0, 0, 0.6)),url(../imgs/aboutusheader.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: white;
+    font-weight: bold;
+}
+
+/*header*/
+
+/*services*/
+.serv-about h1{
+    text-align: center;
+    margin: 50px 0;
+    color: black;
+}
+
+.serv-about{
+    color: rgb(255, 255, 255) !important;
+    margin-bottom: 100px;
+}
+
+.col-sm-5{
+    margin-bottom: 60px;
+    background-color: rgb(0, 33, 95);
+    border-radius: 20px;
+    margin-right: 4px;
+    height: 200px;
+    padding-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (min-width:1000px) {
+    .serv-about{
+        margin-left: 150px;
+    }
+
+    .serv-about h1{
+        margin-left: -80px;
+    }
+}
+
+@media (max-width:100px) {
+    .serv-about{
+        margin-left: 10px;
+    }
+
+    
+}
+/*services*/
+
+/*who we are*/
+.col-sm-6 img{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.who_we_are{
+    text-align: center;
+}
+.who_we_are h1{
+    text-align: center;
+    margin: 50px 0;
+    color: rgb(6, 6, 155);
+}
+
+.row{
+    margin: 100px 0;
+}
+/*who we are*/
+
+
+
+
+/* footer */
+
+
+footer{
+    position: relative !important;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  @media (min-width:1000px) {
+    footer{
+        height: 500px !important;
+    }
+  }
+
+  section{
+    color:white !important;
+  }
+
+  a{
+    text-decoration: none !important;
+  }
+
+  a:hover{
+    color:rgb(11, 175, 197) !important;
+  }
+
+  
+
+/* end footer */
